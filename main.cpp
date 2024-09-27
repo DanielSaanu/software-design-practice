@@ -35,7 +35,7 @@ class commonDiv {
         common = temp;
         cout << "highest Common divisor: " << common << endl;
     }
-    /* has a counter that marks all common divisors starting from 0 to
+    /* has a marker that holds highest common divisors starting from 0 to
      * the larger of the two numbers */
 };
 class checkPalindrome {
@@ -57,8 +57,8 @@ class checkPalindrome {
         else {cout << "Not a palindrome" << endl;}
     }
     /* switches it to a string using same method as the reversi func then
-     * using for loops i compare the first and last values of the string
-     * and repeat until i am at the center*/
+     * using for loops compares the first and last values of the string
+     * and repeat until at the center*/
 
 };
 class powerFunc {
@@ -87,7 +87,8 @@ public:
          * results by squaring the base and halving the exponent in case of even exponents
          * similarly when the exponent is odd we simply need to reduce it by 1 and then
          * start with that number from the beginning as the result and do as we did for the even number
-         * thus reducing the time copmplexity from linear to exponential
+         * thus reducing the time copmplexity from linear to exponential the function uses a forloop to do the calculations
+         * and the power is returned as an int where it is printyed in the main method
          */
     }
 };
@@ -100,10 +101,12 @@ class powerOfTwo {
         }
         else{return false;}
     }
-    /* bitmanipulation first we enure k is greater that 0 then we use the bit wise AND operation
-     *on k and k-1 which will always give zero in the case of a power of 2
-     * right most 1 bit becomes 0 and all following bits become 1 when AND(ing) this
-     * with the origional value of k it becomes 0 */
+    /* bitmanipulation first we enure k is greater that 0 (k > 0) then we use the bit wise AND operation
+     *on k and k-1 which will always give zero in the case of a power of 2 "(k & (k - 1)) == 0"
+     * right most 1 bit becomes 0 and all following bits become 1 "(k - 1)" when AND(ing) this
+     * with the origional value of k it becomes 0
+     * for example 8 in binary is 1000 and 7 is 0111 using &-op results in 0000
+     */
 };
 
 int main() {
