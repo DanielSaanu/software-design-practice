@@ -12,6 +12,8 @@ public:
         }
         cout << " = 1st Number reversed." << endl;
     }
+    /* using to_string method to first make it into a string
+     * then using for loop to reverse the value*/
 };
 
 class commonDiv {
@@ -33,6 +35,8 @@ class commonDiv {
         common = temp;
         cout << "highest Common divisor: " << common << endl;
     }
+    /* has a counter that marks all common divisors starting from 0 to
+     * the larger of the two numbers */
 };
 class checkPalindrome {
     public:
@@ -52,6 +56,9 @@ class checkPalindrome {
         }
         else {cout << "Not a palindrome" << endl;}
     }
+    /* switches it to a string using same method as the reversi func then
+     * using for loops i compare the first and last values of the string
+     * and repeat until i am at the center*/
 
 };
 class powerFunc {
@@ -93,6 +100,10 @@ class powerOfTwo {
         }
         else{return false;}
     }
+    /* bitmanipulation first we enure k is greater that 0 then we use the bit wise AND operation
+     *on k and k-1 which will always give zero in the case of a power of 2
+     * right most 1 bit becomes 0 and all following bits become 1 when AND(ing) this
+     * with the origional value of k it becomes 0 */
 };
 
 int main() {
